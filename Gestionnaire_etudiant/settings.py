@@ -104,6 +104,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
+from django.urls import reverse_lazy
+
+LOGIN_URL = reverse_lazy('connexion')
+
+
 LANGUAGE_CODE = 'fr'
 
 TIME_ZONE = 'UTC'
